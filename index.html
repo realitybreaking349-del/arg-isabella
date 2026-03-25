@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Día 20 - La mayor locura de amor para Isabella</title>
+  <style>
+    body {
+      background: linear-gradient(#0a001f, #1a0033);
+      color: #ff69b4;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 100px 20px;
+      margin: 0;
+    }
+    h1 { font-size: 3.5em; text-shadow: 0 0 20px #ff1493; }
+    p { font-size: 1.4em; max-width: 700px; margin: 30px auto; }
+    input, button {
+      padding: 15px 25px;
+      font-size: 1.2em;
+      margin: 10px;
+      border-radius: 50px;
+      border: none;
+    }
+    button {
+      background: #ff1493;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>❤️ Isabella, mi amor ❤️</h1>
+  <p>Hoy, 20 de marzo, comienza la aventura más grande de nuestras vidas.</p>
+  <p>Ingresa la contraseña secreta de nuestro corazón para abrir el primer túnel:</p>
+  
+  <input type="password" id="clave" placeholder="Escribe aquí...">
+  <button onclick="abrirTunel()">Entrar al túnel del amor</button>
+
+  <script>
+    function abrirTunel() {
+      let clave = document.getElementById("clave").value.toLowerCase().trim();
+      
+      // Cambia estas palabras por las que solo ustedes sepan
+      if (clave === "20marzo" || clave === "isabella" || clave === "nuestro-dia" || clave === "teamo") {
+        window.location.href = "tunel1/pista1.html";
+      } else {
+        alert("Esa no es nuestra clave secreta... pero te amo igual ❤️ Inténtalo de nuevo");
+      }
+    }
+  </script>
+</body>
+</html>
